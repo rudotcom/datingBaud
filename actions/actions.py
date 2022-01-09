@@ -44,13 +44,3 @@ def perform_or_specify(context):
     else:
         specify_slot(context)
         return context
-
-
-def find_intent_and_slots(text):
-    intent = get_intent_by_latent(text)
-    pass
-
-
-def get_intent_form():
-    form = []
-    return form

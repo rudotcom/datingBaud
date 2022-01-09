@@ -11,6 +11,8 @@ import settings
 import face_recognition
 from datetime import datetime, timedelta
 
+from intents import find_intent_and_slots
+
 
 class Face(object):
     class_instances = []
@@ -132,7 +134,7 @@ class Context:
     form = {}
 
     def __init__(self, text):
-        # self.intent, self.slots = find_intent_and_slots(text)
+        self.intent, self.slots = find_intent_and_slots(text)
         # self.form = get_intent_form()
         """
         TODO: решить, как определять тип слота и его наличие в тексте !!!

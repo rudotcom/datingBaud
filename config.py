@@ -7,7 +7,7 @@ INTENT = {
         'action': 'call_avatar',
         'slots': {
             'name': {
-                'type': 'родит',
+                'grammeme': 'gent',
                 'spec': ['кого ты хочешь слышать?', 'кого позвать?', ],
             },
         },
